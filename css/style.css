@@ -1,0 +1,98 @@
+/*RESET DO CSS - PADRÃO GLOBAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*DECLARANDO VARIÁVEIS NO CSS*/
+html{
+    --title-color: #fff;
+    --base-color: #333;
+    --base-color-secund: #00ff7f;
+}
+
+/*APLICANDO O FLEBOX - CAIXA FLEXIVEL*/
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /*FONTE DA BATERIA*/
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    /*DECLARANDO UMA VARIAVEL CSS*/
+    background-color: var(--base-color);
+}
+
+/*TÍTULO DA PÁGINA*/
+h1{
+    color: var(--title-color);
+    margin-bottom: 2rem;
+}
+/*APLICANDO CSS GRID - CAIXA PRINCIPAL*/
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/*APLICANDO CSS GRID - CAIXA SECUNDARIA*/
+.key{
+    width: 8rem;
+    height: 8rem;
+    border: 0.2rem solid var(--title-color);
+
+    /*APLICANDO FLEXBOX*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/*.key.active{
+    VAMOS FAZER DPS
+}*/
+
+/*CAIXA DA COMPOSIÇÃO - INPUT E BUTTON*/
+.composer{
+    width: 26rem;
+    margin-top: 2rem;
+}
+
+/*CAIXA INPUT*/
+.composer #input{
+    width: 100%;
+    outline: none;
+    font-size: 1.7rem;
+    padding: 1rem 1.5rem;
+}
+
+/*CAIXA DO BOTÃO*/
+ .composer button{
+    width: 100%;
+    height: 4rem;
+    background: none;
+    border: 0.2rem solid var(--title-color);
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: var(--title-color);
+    cursor: pointer;
+ }
+
+ /*EFEITO NO BOTÃO*/
+ .composer button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+ }
+
+ /*RODAPÉ*/
+ footer{
+    margin-top: 2rem;
+ }

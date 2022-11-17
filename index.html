@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK CSS EXTERNO -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- LINK FAVICON - ICONE INSERIDO NA ABA DO NAVEGADOR -->
+    <link rel="shortcut icon" href="./img/headphones.svg" type="image/x-icon">
+    <title>Minha Bateria</title>
+</head>
+<body>
+    <!--  TITULO DA PÁGINA-->
+    <h1>Bateria de Jennifer 🥁🎶</h1>
+
+    <!-- CAIXA PRINCIPAL - DIV PAI -->
+    <div class="keys">
+        <!-- INÍCIO CAIXA SECUNDARIAS PRIMEIRA PARTE -->
+        <div class="key" data-key="keyq">Q</div>
+        <div class="key" data-key="keyw">W</div>
+        <div class="key" data-key="keye">E</div>
+        <!--FIM DA CAIXA SECUNDARIAS PRIMEIRAS PARTE-->
+
+        <!-- INÍCIO CAIXA SECUNDARIAS SEGUNDA PARTE-->
+        <div class="key" data-key="keya">A</div>
+        <div class="key" data-key="keys">S</div>
+        <div class="key" data-key="keyd">D</div>
+        <!--FIM DA CAIXA SECUNDARIAS SEGUNDA PARTE-->
+        
+        <!-- INÍCIO CAIXA SECUNDARIAS TERCEIRA PARTE-->
+        <div class="key" data-key="keyz">Z</div>
+        <div class="key" data-key="keyx">X</div>
+        <div class="key" data-key="keyc">C</div>
+        <!--FIM DA CAIXA SECUNDARIAS TERCEIRA PARTE-->
+    </div>
+    <!-- FIM DA CAIXA PRINCIPAL - DIV PAI-->
+
+    <!-- INÍCIO CAIXA PRINCIPAL - COMPOSIÇÃO -->
+    <div class="composer">
+        <!-- INICIO CAIXA INPUT - INSERIR DADOS -->
+        <input type="text" id="input" placeholder="Faça sua composição">
+        <!-- FIM CAIXA INPUT - INSERIR DADOS -->
+
+        <!-- CAIXA DO BOTÃO ENVIAR -->
+        <button>Tocar</button>
+    </div>
+    <!-- FIM DA CAIXA PRNCIPAL - COMPOSIÇÃO-->
+
+    <!-- RODAPÉ - FOOTER-->
+    <footer>Criado por Jennifer Melanie</footer>
+
+    <!-- TAG´S DE ÁUDIO -->
+
+    <!-- INÍCIO PRIMEIRA PARTE -->
+    <audio src="./sounds/keyq.wav" id="s_keyq"></audio>
+    <audio src="./sounds/keyw.wav" id="s_keyw"></audio>
+    <audio src="./sounds/keye.wav" id="s_keye"></audio>
+    <!-- FIM PRIMEIRA PARTE -->
+
+    <!-- INÍCIO SEGUNDA PARTE -->
+    <audio src="./sounds/keya.wav" id="s_keya"></audio>
+    <audio src="./sounds/keys.wav" id="s_keys"></audio>
+    <audio src="./sounds/keyd.wav" id="s_keyd"></audio>
+    <!-- FIM SEGUNDA PARTE -->
+
+    <!-- INÍCIO TERCEIRA PARTE -->
+    <audio src="./sounds/keyz.wav" id="s_keyz"></audio>
+    <audio src="./sounds/keyx.wav" id="s_keyx"></audio>
+    <audio src="./sounds/keyc.wav" id="s_keyc"></audio>
+    <!-- FIM TERCEIRA PARTE -->
+
+    <!-- SCRIPT DO JAVASCRIPT-->
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
